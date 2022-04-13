@@ -1,0 +1,18 @@
+{
+  "description": "Styled select box editor for Neos CMS",
+  "type": "neos-plugin",
+  "name": "neosrulez/neos-styledselectboxeditor",
+  "require": {
+    "neos/neos": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NeosRulez\\Neos\\StyledSelectBoxEditor\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "NeosRulez.Neos.StyledSelectBoxEditor"
+    }
+  }
+}

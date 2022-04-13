@@ -1,0 +1,142 @@
+.reset__reset___3TorS {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+    .reset__reset___3TorS,
+    .reset__reset___3TorS:before,
+    .reset__reset___3TorS:after {
+        box-sizing: border-box;
+    }
+
+    /* some browsers set a font-size or margin in their user stylesheets */
+
+    .reset__reset___3TorS input {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3TorS textarea {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3TorS select {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3TorS button {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3TorS ul {
+        padding: 0;
+    }
+
+    /* webkit adds some weird spacing otherwise */
+
+    .reset__reset___3TorS li {
+        display: block;
+    }
+
+    .reset__reset___3TorS input::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    /* webkit adds white box around search box */
+
+    .reset__reset___3TorS input {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+
+.style__listPreviewElement___2IAOv {
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+
+    /* subtract the size of padding */
+    line-height: calc(40px - 10px);
+    padding: 5px 16px;
+}
+
+.style__listPreviewElement--isDisabled___ZuPaO {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.style__listPreviewElement--isHighlighted___O38Zd {
+    background: #00ADEE;
+}
+
+.style__listPreviewElement--isHighlighted___O38Zd > span {
+    color: #fff;
+}
+
+.style__listPreviewElement__icon___3zQy5 {
+    margin-right: .5em;
+}
+
+.style__listPreviewElement__iconWrapper___TVyy3 {
+    padding: 0 !important;
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+}
+
+.style__icon___2QlrM {
+    display: inline-block;
+    font: normal normal normal FontAwesome;
+    font-size: 14px/1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.style__icon--paddedLeft___1GeK2 {
+    margin-left: .75em;
+}
+.style__icon--paddedRight___1I3St {
+    margin-right: .75em;
+}
+.style__icon--color-warn___27fxB {
+    color: #ff8700;
+}
+.style__icon--color-error___3CxLj {
+    color: #ff460d;
+}
+.style__icon--color-primaryBlue___14-i1 {
+    color: #00ADEE;
+}
+.style__icon--huge___1Fs6T svg {
+        height: 3em;
+    }
+.style__icon--large___19PDd svg {
+        height: 2em;
+    }
+.style__icon--big___7a71W svg {
+        height: 1.33em;
+    }
+.style__icon--small___2fdGW svg {
+        height: 1em;
+        max-height: 1em;
+        max-width: 100%;
+    }
+.style__icon--tiny___14ggp svg {
+        height: .75em;
+    }
+.style__icon--resource___2I9QT {
+    display: inline-grid;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/*# sourceMappingURL=Plugin.css.map*/

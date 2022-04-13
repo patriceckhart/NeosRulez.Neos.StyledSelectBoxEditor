@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          NeosRulez.Neos:StyledSelectBoxEditor:
+            resource: resource://NeosRulez.Neos.StyledSelectBoxEditor/Public/StyledSelectBoxEditor/Plugin.js

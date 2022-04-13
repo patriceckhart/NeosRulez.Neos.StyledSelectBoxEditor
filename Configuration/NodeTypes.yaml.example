@@ -1,0 +1,21 @@
+'Acme.Site:Document.Page':
+  properties:
+    fontFamily:
+      type: string
+      ui:
+        label: Font family
+        reloadIfChanged: true
+        inspector:
+          group: document
+          editor: NeosRulez/Neos/Inspector/Editors/StyledSelectBoxEditor
+          editorOptions:
+            values:
+              'impact':
+                label: 'Impact'
+                style: 'font-family: Impact;'
+              'courier':
+                label: 'Courier'
+                style: 'font-family: Courier;'
+              'georgia':
+                label: 'Georgia'
+                style: 'font-family: Georgia;'
