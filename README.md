@@ -9,6 +9,9 @@ The NeosRulez.Neos.StyledSelectBoxEditor package is listed on packagist (https:/
 
 Just run:
 
+```
+composer require neosrulez/neos-styledselectboxeditor
+```
 
 ## Configuration
 
@@ -36,9 +39,6 @@ Just run:
                 style: 'font-family: Georgia;'
 ```
 
-```
-composer require neosrulez/neos-styledselectboxeditor
-```
 
 ## Author
 
