@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import {SelectBox} from '@neos-project/react-ui-components';
 import {neos} from '@neos-project/neos-ui-decorators';
 import I18n from '@neos-project/neos-ui-i18n';
+import { $transform } from "plow-js";
+import { connect } from "react-redux";
+import { selectors } from "@neos-project/neos-ui-redux-store";
 
 import OptionWithStyle from "./OptionWithStyle";
 
@@ -19,6 +22,16 @@ const getDataLoaderOptionsForProps = (props) => ({
     dataSourceAdditionalData: props.options.dataSourceAdditionalData,
     dataSourceDisableCaching: Boolean(props.options.dataSourceDisableCaching),
 });
+
+@neos((globalRegistry) => ({
+    i18nRegistry: globalRegistry.get("i18n"),
+    dataSourcesDataLoader: globalRegistry.get("dataLoaders").get("DataSources"),
+}))
+@connect(
+    $transform({
+        focusedNodePath: selectors.CR.Nodes.focusedNodePathSelector,
+    })
+)
 
 export default class StyleSelectBoxEditor extends PureComponent {
     static propTypes = {

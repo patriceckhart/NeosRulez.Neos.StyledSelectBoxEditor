@@ -19,7 +19,7 @@ class SelectBox_Option_MultiLineWithStyle extends PureComponent {
             onMouseEnter
         } = this.props;
 
-        const optionClassName = label.toLowerCase().trim();
+        const optionClassName = label.toLowerCase().trim().replace(/\s/g, '');
         const finalStyle = '.' + optionClassName + '{ ' + style + ' cursor:pointer; font-size:18px; padding-left:14px; }';
 
         return (

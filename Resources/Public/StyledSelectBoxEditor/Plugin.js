@@ -416,6 +416,26 @@ module.exports = (0, _readFromConsumerApi2.default)('NeosProjectPackages')().Neo
 
 /***/ }),
 
+/***/ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/neos-ui-redux-store/index.js":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/neos-ui-redux-store/index.js ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _readFromConsumerApi = __webpack_require__(/*! ../../../../dist/readFromConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/readFromConsumerApi.js");
+
+var _readFromConsumerApi2 = _interopRequireDefault(_readFromConsumerApi);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = (0, _readFromConsumerApi2.default)('NeosProjectPackages')().NeosUiReduxStore;
+
+/***/ }),
+
 /***/ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/react-ui-components/index.js":
 /*!*********************************************************************************************************************!*\
   !*** ./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/react-ui-components/index.js ***!
@@ -436,6 +456,26 @@ module.exports = (0, _readFromConsumerApi2.default)('NeosProjectPackages')().Rea
 
 /***/ }),
 
+/***/ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/plow-js/index.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/plow-js/index.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _readFromConsumerApi = __webpack_require__(/*! ../../../../dist/readFromConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/readFromConsumerApi.js");
+
+var _readFromConsumerApi2 = _interopRequireDefault(_readFromConsumerApi);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = (0, _readFromConsumerApi2.default)('vendor')().plow;
+
+/***/ }),
+
 /***/ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/prop-types/index.js":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/prop-types/index.js ***!
@@ -453,6 +493,26 @@ var _readFromConsumerApi2 = _interopRequireDefault(_readFromConsumerApi);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = (0, _readFromConsumerApi2.default)('vendor')().PropTypes;
+
+/***/ }),
+
+/***/ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/react-redux/index.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/react-redux/index.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _readFromConsumerApi = __webpack_require__(/*! ../../../../dist/readFromConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/readFromConsumerApi.js");
+
+var _readFromConsumerApi2 = _interopRequireDefault(_readFromConsumerApi);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = (0, _readFromConsumerApi2.default)('vendor')().reactRedux;
 
 /***/ }),
 
@@ -1167,7 +1227,7 @@ var SelectBox_Option_MultiLineWithStyle = (_temp = _class = function (_PureCompo
                 onMouseEnter = _props.onMouseEnter;
 
 
-            var optionClassName = label.toLowerCase().trim();
+            var optionClassName = label.toLowerCase().trim().replace(/\s/g, '');
             var finalStyle = '.' + optionClassName + '{ ' + style + ' cursor:pointer; font-size:18px; padding-left:14px; }';
 
             return _react2.default.createElement(
@@ -1224,7 +1284,7 @@ exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _class, _temp2;
+var _dec, _dec2, _class, _class2, _temp2;
 
 var _react = __webpack_require__(/*! react */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/react/index.js");
 
@@ -1241,6 +1301,12 @@ var _neosUiDecorators = __webpack_require__(/*! @neos-project/neos-ui-decorators
 var _neosUiI18n = __webpack_require__(/*! @neos-project/neos-ui-i18n */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/neos-ui-i18n/index.js");
 
 var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
+
+var _plowJs = __webpack_require__(/*! plow-js */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/plow-js/index.js");
+
+var _reactRedux = __webpack_require__(/*! react-redux */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/react-redux/index.js");
+
+var _neosUiReduxStore = __webpack_require__(/*! @neos-project/neos-ui-redux-store */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/neosProjectPackages/neos-ui-redux-store/index.js");
 
 var _OptionWithStyle = __webpack_require__(/*! ./OptionWithStyle */ "./src/OptionWithStyle.js");
 
@@ -1266,7 +1332,14 @@ var getDataLoaderOptionsForProps = function getDataLoaderOptionsForProps(props) 
     };
 };
 
-var StyleSelectBoxEditor = (_temp2 = _class = function (_PureComponent) {
+var StyleSelectBoxEditor = (_dec = (0, _neosUiDecorators.neos)(function (globalRegistry) {
+    return {
+        i18nRegistry: globalRegistry.get("i18n"),
+        dataSourcesDataLoader: globalRegistry.get("dataLoaders").get("DataSources")
+    };
+}), _dec2 = (0, _reactRedux.connect)((0, _plowJs.$transform)({
+    focusedNodePath: _neosUiReduxStore.selectors.CR.Nodes.focusedNodePathSelector
+})), _dec(_class = _dec2(_class = (_temp2 = _class2 = function (_PureComponent) {
     _inherits(StyleSelectBoxEditor, _PureComponent);
 
     function StyleSelectBoxEditor() {
@@ -1356,7 +1429,7 @@ var StyleSelectBoxEditor = (_temp2 = _class = function (_PureComponent) {
     }]);
 
     return StyleSelectBoxEditor;
-}(_react.PureComponent), _class.propTypes = {
+}(_react.PureComponent), _class2.propTypes = {
     commit: _propTypes2.default.func.isRequired,
     className: _propTypes2.default.string,
     value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.arrayOf(_propTypes2.default.string)]),
@@ -1385,11 +1458,11 @@ var StyleSelectBoxEditor = (_temp2 = _class = function (_PureComponent) {
     }).isRequired,
 
     focusedNodePath: _propTypes2.default.string.isRequired
-}, _class.defaultOptions = {
+}, _class2.defaultOptions = {
     // Use "5" as minimum result for search default; same as with old UI
     minimumResultsForSearch: 5,
     threshold: 0
-}, _temp2);
+}, _temp2)) || _class) || _class);
 exports.default = StyleSelectBoxEditor;
 
 /***/ }),
